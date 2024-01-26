@@ -24,13 +24,3 @@ jobs:
       
       name: Run unit tests with nose #We are going to do unit tests and also check the coverage
       run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
-      
-
-
-
-
-
-
-    
-
-
