@@ -1,0 +1,13 @@
+name: CI workflow #It makes Github aware that this is a CI workflow
+on: #Triggers
+  push: #First trigger when something is push to the main branch
+    branches: [ {"main"} ]
+  pull_request: #When someone does a pull request
+    branches: [ {"main"} ]
+jobs:
+  build: #This will build the app using dependencies
+    runs-on: ubuntu-latest #This will be the runner who will carry out the actions
+    container: python:3.9-slim #This will ensure that the pipeline runs on the same version of python
+    
+
+
